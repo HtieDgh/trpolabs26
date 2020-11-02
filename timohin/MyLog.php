@@ -1,5 +1,5 @@
-<?php 
-class MyLog extends LogAbstract implements LogInterface{
+<?php namespace timohin;
+class MyLog extends \core\LogAbstract implements \core\LogInterface{
     public static function log($str){
         self::Instance()->log[]=['msg'=>$str, 'date'=>date("d-m-Y H:i:s")];
     }

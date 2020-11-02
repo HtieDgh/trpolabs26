@@ -1,5 +1,5 @@
-<?php
-class QuadricEql extends LinearEql implements EquationInterface{
+<?php namespace timohin;
+class QuadricEql extends LinearEql implements \core\EquationInterface{
         protected function desc($a, $b, $c){
             return $b*$b-4*$a*$c;  
         }
@@ -10,7 +10,7 @@ class QuadricEql extends LinearEql implements EquationInterface{
             MyLog::log('Eq is quadric');
             $d=$this->desc($a,$b,$c);
             if($d<0){
-                return null;
+                throw new TimohinExeption('Error: no real roots');
             }
             $d=sqrt($d);
             $this->x[0] = (-$b - $d)/(2*$a);
