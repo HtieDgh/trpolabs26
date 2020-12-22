@@ -1,7 +1,7 @@
 <?php namespace timohin;
 class LinearEql{
     protected $x;
-    public function solve(float $a, float $b){
+    public function solve($a, $b){
         if($a==0 && $b!=0){
             throw new TimohinExeption('Error: eq not exist');
         }

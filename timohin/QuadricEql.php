@@ -3,7 +3,7 @@ class QuadricEql extends LinearEql implements \core\EquationInterface{
         protected function desc($a, $b, $c){
             return $b*$b-4*$a*$c;  
         }
-        public function solve(float $a, float $b, float $c=0){
+        public function solve($a, $b, $c=0){
             if($a==0){
                 return parent::solve($b, $c);
             }

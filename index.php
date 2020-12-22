@@ -10,6 +10,7 @@ spl_autoload_register(function($pClassName) {
 });
 
 try{
+    ML::log('Program version: '.file_get_contents('version'));
     echo "Enter 3 params a, b and с (eg: '1 0 -9'):\r\n";
     sscanf(rtrim(fgets(STDIN)), "%d %d %d",$a,$b,$c);
     ML::log("Solving: {$a}x^2".($b >=0 ?' + '.$b:' - '.(-$b)).'x'.($c >=0 ?' + '.$c:' - '.(-$c)).' =  0');
