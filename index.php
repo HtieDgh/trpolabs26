@@ -5,12 +5,10 @@ ini_set('display_errors',1); error_reporting(-1);
 use timohin\QuadricEql as QuadEql;
 use timohin\MyLog as ML;
 
-spl_autoload_register(function($pClassName) {
-    require_once(__DIR__ . "/${pClassName}.php");
-});
+require_once("vendor/autoload.php");
 
 try{
-    ML::log('Program version: '.file_get_contents('version'));
+    ML::log('Program version: '.file_get_contents(__DIR__.'/version'));
     echo "Enter 3 params a, b and с (eg: '1 0 -9'):\r\n";
     sscanf(rtrim(fgets(STDIN)), "%d %d %d",$a,$b,$c);
     ML::log("Solving: {$a}x^2".($b >=0 ?' + '.$b:' - '.(-$b)).'x'.($c >=0 ?' + '.$c:' - '.(-$c)).' =  0');

@@ -1,0 +1,34 @@
+{
+    "name": "htiedgh/trpolabs26",
+    "description": "labs lib for trpo",
+    "type": "library",
+	"license": "MIT",
+	"minimum-stability":"dev",
+    "authors": [
+        {
+            "name": "htie dgh",
+            "email": "mishawor@yandex.ru"
+        }
+    ],
+    "repositories":[
+		{
+			"type":"vcs",
+            "url":"https://github.com/HtieDgh/timohin.git"
+        },
+        {
+            "type":"vcs",
+            "url":"https://github.com/rok9ru/trpo-core.git"
+        }
+    ],
+	"require": {
+		"htiedgh/timohin": "2.0"
+	  },
+    "scripts": {
+		"post-update-cmd": [
+			"git symbolic-ref --short -q HEAD>version"
+		],
+		"post-install-cmd": [
+			"git symbolic-ref --short -q HEAD>version"
+		]
+	}
+}

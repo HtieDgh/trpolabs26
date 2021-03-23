@@ -1,0 +1,94 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "518571745c48ee2a900d37c805352228",
+    "packages": [
+        {
+            "name": "htiedgh/timohin",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HtieDgh/timohin.git",
+                "reference": "0dab1e885736d057853fce43ad96d2c7d03e8418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HtieDgh/timohin/zipball/0dab1e885736d057853fce43ad96d2c7d03e8418",
+                "reference": "0dab1e885736d057853fce43ad96d2c7d03e8418",
+                "shasum": ""
+            },
+            "require": {
+                "rok9ru/trpo-core": "2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "timohin\\": "timohin"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "donjoan",
+                    "email": "htiedgh@mail.ru"
+                }
+            ],
+            "description": "for trpo",
+            "support": {
+                "source": "https://github.com/HtieDgh/timohin/tree/2.0",
+                "issues": "https://github.com/HtieDgh/timohin/issues"
+            },
+            "time": "2021-03-23T12:06:10+00:00"
+        },
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core.git",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rok9ru/trpo-core/zipball/fd341399677df9ed17a71e4abb9230277ede5395",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "core\\": "core"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "Project for lesson subject \"TRPO\" test project",
+            "support": {
+                "source": "https://github.com/rok9ru/trpo-core/tree/2.0",
+                "issues": "https://github.com/rok9ru/trpo-core/issues"
+            },
+            "time": "2021-01-13T12:08:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
